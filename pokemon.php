@@ -59,9 +59,10 @@
                     $card = $tcg_data['data'][0];
                     $card_name = $card['name'];
                     $card_image = $card['images']['large'];
-
+                
                     echo "<h2>Carta do Pokémon TCG: $card_name</h2>";
-                    echo "<img src='$card_image' alt='Carta de $card_name'>";
+                    // Adicionando o id="card-image" para aplicar o CSS corretamente
+                    echo "<img id='card-image' src='$card_image' alt='Carta de $card_name'>"; 
                 } else {
                     echo "<p>Não foram encontradas cartas de TCG para $name.</p>";
                 }
@@ -76,7 +77,9 @@
     ?>
 
     <!-- Botão para voltar à página anterior -->
-    <button onclick="history.back()" class="back-button">Voltar</button>
+    <button onclick="goBack()" class="back-button">Voltar</button>
+
+    <script src="js/scripts.js"></script> <!-- Arquivo JavaScript -->
 
 </body>
 </html>

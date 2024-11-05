@@ -66,3 +66,11 @@ button:hover {
     background-color: #1D2C5E; /* Cor Delft blue */
     color: #C7A008 /* Cor Neon Gold */
 }
+
+/* Efeito do botão desativado */
+#submitButton:disabled {
+    background-color: #cccccc; /* Cor cinza */
+    color: #666666; /* Cor do texto */
+    cursor: not-allowed; /* Indica que está desativado */
+    opacity: 1; /* Mantenha a opacidade em 1 */
+}

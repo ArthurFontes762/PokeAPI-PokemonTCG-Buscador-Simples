@@ -67,6 +67,14 @@ img {
     margin-top: 10px; /* Espaço acima da imagem */
 }
 
+/* Estilo para a carta do Pokémon TCG */
+#card-image {
+    width: 500px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Para manter a proporção */
+    object-fit: contain; /* Para manter a proporção sem distorcer */
+    margin-top: 10px; /* Espaço acima da imagem */
+}
+
 /* Estilo para mensagens de erro */
 .error {
     color: red; /* Cor do texto para mensagens de erro */

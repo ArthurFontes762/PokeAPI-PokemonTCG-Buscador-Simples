@@ -10,11 +10,12 @@
     <!-- Imagem do logotipo -->
     <img src="img/Pokemon Database Search.png" alt="Logo do site" class="logo">
 
-    <form action="pokemon.php" method="GET">
+    <form id="pokemonForm" action="pokemon.php" method="GET">
         <label for="pokemon">Nome do Pokémon:</label>
         <input type="text" id="pokemon" name="pokemon" placeholder="Apenas o nome do Pokémon" required>
-        <button type="submit">Buscar</button>
+        <button type="button" id="submitButton" onclick="submitForm()" disabled>Buscar</button> <!-- Inicia desativado -->
     </form>
 
+    <script src="js/scripts.js"></script> <!-- Arquivo JavaScript -->
 </body>
 </html>
