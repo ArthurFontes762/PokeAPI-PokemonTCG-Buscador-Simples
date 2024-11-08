@@ -23,6 +23,12 @@ form {
     width: 300px; /* Largura fixa do formulário */
 }
 
+/* Estilo para os rótulos do formulário */
+label {
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+    font-weight: bold; /* Deixa o texto mais forte */
+}
+
 /* Estilo para os campos de entrada de texto */
 input[type="text"] {
     padding: 10px; /* Espaçamento interno */

@@ -18,12 +18,6 @@ function submitForm() {
     form.submit();
 }
 
-// Função para enviar o formulário
-function submitForm() {
-    const form = document.getElementById('pokemonForm');
-    form.submit();
-}
-
 // Função para ativar o botão quando houver 3 caracteres ou mais
 function checkInput() {
     const inputField = document.getElementById('pokemon');

@@ -11,14 +11,14 @@
     <!-- Imagem do logotipo -->
     <img src="img/Pokemon Database Search.png" alt="Logo do site" class="logo">
 
- <form id="pokemonForm" action="pokemon.php" method="GET">
-    <label for="pokemon">Nome do Pokémon:</label>
-    <div style="position: relative; width: 100%;"> <!-- Contêiner que alinha o dropdown -->
-        <input type="text" id="pokemon" name="pokemon" placeholder="Apenas o nome do Pokémon" oninput="fetchPokemonSuggestions()" required>
-        <div id="suggestions" class="suggestions-dropdown"></div>
-    </div>
-    <button type="button" id="submitButton" onclick="submitForm()" disabled>Buscar</button>
-</form>
+    <form id="pokemonForm" action="pokemon.php" method="GET">
+        <label for="pokemon" style="margin-bottom: 5px; font-weight: bold;">Nome do Pokémon:</label>
+        <div style="position: relative; width: 100%; font-weight: bold;"> <!-- Contêiner que alinha o dropdown -->
+            <input type="text" id="pokemon" name="pokemon" placeholder="Apenas o nome do Pokémon" oninput="fetchPokemonSuggestions()" required>
+            <div id="suggestions" class="suggestions-dropdown"></div>
+        </div>
+        <button type="button" id="submitButton" onclick="submitForm()" disabled>Buscar</button>
+    </form>
 
     <div class="projects">
         <p class="projects-text">Veja meus outros projetos:</p>
