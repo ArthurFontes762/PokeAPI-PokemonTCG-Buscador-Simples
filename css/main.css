@@ -11,42 +11,6 @@ body {
     margin: 0; /* Remove margens padrão */
 }
 
-/* Estilo para a imagem do logotipo */
-.logo {
-    display: block; /* Define o display como bloco para centralizar */
-    margin: 0 auto; /* Centraliza horizontalmente a imagem */
-    width: 700px; /* Largura da imagem */
-    height: auto; /* Mantém a proporção */
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
-}
-
-.projects {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Estilo para parágrafos */
-.projects-text {
-    font-size: 1.1em; /* Tamanho da fonte dos parágrafos */
-    color: #555; /* Cor do texto */
-    margin: 10px 0; /* Margem em cima e embaixo */
-}
-
-.project-item {
-    display: inline-block;
-    margin: 10px;
-}
-
-/* Estilo para a imagem do projeto 1 */
-.project1 {
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    display: block; /* Define o display como bloco para centralizar */
-    margin: 0 auto; /* Centraliza horizontalmente a imagem */
-    width: 300px; /* Largura da imagem */
-    height: auto; /* Mantém a proporção */
-    margin-bottom: 10px; /* Espaço abaixo da imagem */
-}
-
 /* Estilo para o formulário */
 form {
     background-color: #fff; /* Fundo branco */
@@ -59,12 +23,6 @@ form {
     width: 300px; /* Largura fixa do formulário */
 }
 
-/* Estilo para os rótulos do formulário */
-label {
-    margin-bottom: 5px; /* Espaço abaixo do rótulo */
-    font-weight: bold; /* Deixa o texto mais forte */
-}
-
 /* Estilo para os campos de entrada de texto */
 input[type="text"] {
     padding: 10px; /* Espaçamento interno */
@@ -73,6 +31,72 @@ input[type="text"] {
     margin-bottom: 15px; /* Espaço abaixo do campo */
     font-size: 16px; /* Tamanho da fonte */
     font-weight: bold; /* Deixa o texto mais forte */
+    width: 100%; /* Campo ocupa toda a largura do formulário */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+/* Estilo para o dropdown de sugestões */
+.suggestions-dropdown {
+    position: absolute; /* Posicionamento absoluto em relação ao contêiner */
+    top: 100%; /* Coloca o dropdown logo abaixo do campo */
+    left: 0; /* Alinha à esquerda do campo */
+    border: 1px solid #ddd; /* Borda suave */
+    max-height: 150px; /* Limita a altura do dropdown */
+    overflow-y: auto; /* Adiciona barra de rolagem caso necessário */
+    width: 100%; /* Mesma largura do campo de entrada */
+    background-color: #f0f0f0; /* Cor de fundo suave */
+    z-index: 1000; /* Garante que o dropdown fique sobre outros elementos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 4px; /* Suaviza as bordas do dropdown */
+}
+
+/* Estilo para cada item dentro do dropdown */
+.suggestions-dropdown div {
+    padding: 8px; /* Espaçamento interno */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Efeito de hover no item do dropdown */
+.suggestions-dropdown div:hover {
+    background-color: #eee; /* Altera a cor de fundo quando o mouse passa por cima */
+}
+
+/* Estilo para a imagem do logotipo */
+.logo {
+    display: block; /* Define o display como bloco para centralizar */
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
+    width: 700px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+/* Estilo para a área dos projetos */
+.projects {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaço acima da área de projetos */
+}
+
+/* Estilo para os textos dos projetos */
+.projects-text {
+    font-size: 1.1em; /* Tamanho da fonte dos parágrafos */
+    color: #555; /* Cor do texto */
+    margin: 10px 0; /* Margem em cima e embaixo */
+}
+
+/* Estilo para os itens dos projetos */
+.project-item {
+    display: inline-block; /* Faz com que os itens fiquem na mesma linha */
+    margin: 10px; /* Espaço entre os itens */
+}
+
+/* Estilo para a imagem do projeto 1 */
+.project1 {
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    display: block; /* Define o display como bloco para centralizar */
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
+    width: 300px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
 }
 
 /* Estilo para o botão de busca */
